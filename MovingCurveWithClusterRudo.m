@@ -1,5 +1,5 @@
 clear all, clc, close all
-%This is a change to try Branch "Branchtry" 
+%Un comentario en el cod para variar
 N      = 150; %Number of *
 Nf= 10; %number of frames
 n      = 1:N/2;
