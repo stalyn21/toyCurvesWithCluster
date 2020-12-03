@@ -1,0 +1,23 @@
+function [X] = toy_data_generation(Nf,N) 
+N=5;
+n      = 1:N/2; 
+tao    = n/N; 
+v      = 0.05;
+s      = 7;
+Xt = [];
+xt     = ... 
+    [abs(cos(2*pi*tao))';... 
+    -abs(cos(2*pi*tao))']; 
+
+for t      = 1:7%Nf 
+    
+    yt     = ... 
+    [abs(t*sin(2*pi*tao))';... 
+    abs(t*sin(2*pi*tao))']; 
+    
+    Xt = [Xt; xt yt]
+ 
+    plot(xt,yt,'*r'), hold on, pause(0.5) 
+    axis([min(xt) max(xt) 1 10]) 
+end
+
