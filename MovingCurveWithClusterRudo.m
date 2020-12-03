@@ -1,4 +1,5 @@
 clear all, clc, close all
+%This is a change to try Branch "Branchtry" 
 N      = 150; %Number of *
 Nf= 10; %number of frames
 n      = 1:N/2;
@@ -20,7 +21,7 @@ for t = 1:Nf
     yt = abs(t*sin(2*pi*tao))';
     yt = [yt;yt];
     rng(s);
-    mu = rand(length(yt),1)
+    mu = rand(length(yt),1);
     yt = yt + v*mu;
     Y(:,t) = yt; %La columna t+1 es reemplazado por yt. 
     plot(x,yt,'*r')
