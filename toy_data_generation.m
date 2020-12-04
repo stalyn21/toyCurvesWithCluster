@@ -2,8 +2,8 @@ function [X] = toy_data_generation(Nf,N)
 
     n      = 1:N/2; 
     tao    = n/N; 
-    v      = 0.05;
-    s      = 7;
+    %v      = 0.05;
+    %s      = 7;
     X = [];
     xt     = ... 
         [abs(cos(2*pi*tao))';... 
@@ -19,8 +19,8 @@ function [X] = toy_data_generation(Nf,N)
 
         plot(xt,yt,'*r'), hold on, pause(0.1) 
         axis([min(xt) max(xt) 1 10]) 
-    end
-
+    endfor
+    print -djpg experiment1_31.png
    % fprintf([repmat('%f\t', 1, size(X, 2)) '\n'], X');
 
-end
+endfunction
