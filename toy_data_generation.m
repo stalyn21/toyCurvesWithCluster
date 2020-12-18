@@ -19,8 +19,12 @@ function [X] = toy_data_generation(Nf,N)
 
         plot(xt,yt,'*r'), hold on, pause(0.1) 
         axis([min(xt) max(xt) 1 10]) 
-    endfor
-    print -djpg experiment1_31.png
+    end
+    
+    % Normalize matrix X
+    % X = X./repmat(max(abs(X)),size(X,1),1);
+    
+    % print -djpg experiment1_31.png
    % fprintf([repmat('%f\t', 1, size(X, 2)) '\n'], X');
 
-endfunction
+end
