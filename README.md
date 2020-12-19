@@ -14,7 +14,10 @@ To start, we work with GNU/Linux and Windows in ours operating systems, using sp
 ## Final Remark
 
 In this practice, we obtained some important results.
+
 • In exerceise 1, we created a script which generates an artificial movingcurve with an adjustable number of frames aswell as number of samples.
+
+<p align="center"> <img src="https://github.com/stalyn21/toyCurvesWithCluster/blob/main/images/wiithoutNormalize/experiment_1/experiment1_5_0.jpg" width="300"/> <img src="https://github.com/stalyn21/toyCurvesWithCluster/blob/main/images/wiithoutNormalize/experiment_1/experiment1_5_01.jpg" width="300"/> <img src="https://github.com/stalyn21/toyCurvesWithCluster/blob/main/images/wiithoutNormalize/experiment_1/experiment1_5_05.jpg" width="300"/> 2D moving-curves without kmeans and noise</p> 
 
 • In experiment 2, we have noticed that the clusters are more differentiable when the noise is small. Conversely, the clusters formed when the noise is bigger, are over- lapped and hence less differentiable.
 
